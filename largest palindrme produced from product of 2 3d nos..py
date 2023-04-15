@@ -28,4 +28,5 @@ print (compute())'''
 #PROBABLY TO BE LEARNT IN CLASS XII.
 
 #MAGICALLY , I LEARNT IT IN CLASS XII AFTER ALL.
+#Its list comprehension.
 
