@@ -17,7 +17,7 @@ while run:
     pygame.time.delay(30)#milisecond
     #it is done so that things go smooth
     for event in pygame.event.get(): #it is alist of all events occuring due to user.
-        if event.type== QUIT:
+        if event.type== pygame.QUIT:
             run=False
     keys= pygame.key.get_pressed()#list of all key inputs by user
     if keys[pygame.K_LEFT]:       #ei input asile jinishara x y coordinate re changes asiba
