@@ -11,7 +11,7 @@ while (result=='y'):
         print('ur result is', a*b)
     elif (x=='/'):
         print ('dont enter 2nd arguement 0')
-        print ('ur quotient is', a/b,'and remainder is',a%b)
+        print ('ur quotient is', a//b,'and remainder is',a%b)
     
     else:
         print ('unsupported operation')
