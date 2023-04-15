@@ -32,12 +32,12 @@ while run:
     #nua rect banauchu ta old rect ku livaiba ta mu janini kinti ta upare blck color chadheidele
     #kaam khalas---syntax hela "[SURFACE].fill((R,G,B))" black pain RGB 000 heijiba
     de.fill((0,0,0))
-    pygame.draw.rect(de,(200,0,0),(x_p,y_p,x_l,y_l)
-    #pygame.display.update()
+    pygame.draw.rect(de,(200,0,0),(x_p,y_p,x_l,y_l))
+    
     #initialise karichu mane 'quit' bi karibu.
     #this pon re quit kale kichi display habani.
     #sethipain surface ku refresh karibakunpade.so we do as follws
-    
+    pygame.display.update()
     #ebe khali display haba input naba pain draw kariba purbaru input instructions debu.
     #ebe sesa heba
 pygame.quit()
