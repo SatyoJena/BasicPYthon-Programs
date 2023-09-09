@@ -1,0 +1,23 @@
+nodes_data is a list
+e.g. [1,2,3,4]
+we first store node_data[0] in temp, then dedlete it, all by using pop
+[2,3,4]
+then initiating a loop, we take data from headless list and use it to assign .next values
+at the end of the list we needn't assign to None, as None is the default .next value for a Node
+This is more pythonic and elegant
+
+#what if we didn't use pop?
+Let's look at a trivial(noob) solution
+
+class Linked_list:
+    def __init__(self, nodes_data=None):
+        self.head = None
+        if (isinstance(nodes_data,list) and len(nodes_data!=0)):
+            self.head = Node(nodes_data[0])
+            self.head.next = Node(nodes_data[1])
+            
+            for i in range(1,len(nodes_data)-1 ) :  # takes care of ListIndexOutOfRange
+                temp = Node(nodes_data[i]) 			# creates a duplicate of Node(nodes_data[1]) which is already there. Unsafe.
+                temp.next = Node(nodes_data[i+1])
+
+Ugly, looks like code has been poorly patched and smells of errors, though they do literally same XD.
